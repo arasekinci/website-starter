@@ -52,7 +52,7 @@ In this directory it will create the first project structure and set up transiti
   │   └── index.pug
 ```
 
-### Sayfa Ekleme
+### Adding Pages
 
 To add a new page, create a file with the extension .pug in `src`. Add the files to the pug task in the **Gruntfile.js** file.
 
