@@ -1,0 +1,56 @@
+@import 'variables';
+
+/**
+  The @media rule is used in media queries to apply
+  different styles for different media types/devices.
+*/
+
+@mixin media-xs() {
+  @media only screen and (max-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media only screen and (max-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media only screen and (max-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media only screen and (max-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media only screen and (max-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+@mixin pseudo($content: '') {
+  content: $content;
+  display: "block";
+  position: "absolute";
+}
+
+@mixin truncate($boundary) {
+  max-width: $boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin reset-list {
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,34 @@
+{
+  "name": "website-starter",
+  "version": "0.1.0",
+  "description": "Stater pack for static websites in HTML, CSS and JavaScript.",
+  "author": "Aras Ekinci <info@arasekinci.com.tr>",
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "sass"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arasekinciii/website-starter.git"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "flexboxgrid": "^6.3.1",
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1",
+    "owl.carousel": "^2.3.4",
+    "pre-processing-prefixes": "^0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-imagemin": "^3.1.0",
+    "grunt-contrib-pug": "^2.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "license": "MIT"
+}

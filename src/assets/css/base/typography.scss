@@ -1,0 +1,156 @@
+@import '../abstracts/variables';
+
+.typography {
+  margin: 1.5em 0;
+}
+
+h1 {
+  color: $color-heading;
+  font-size: 2.07em;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  color: $color-heading;
+  font-size: 1.71em;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  color: $color-heading;
+  font-size: 1.42em;
+  letter-spacing: -0.006em;
+}
+
+h4 {
+  color: $color-subheading;
+  font-size: 1.14em;
+  letter-spacing: -0.004em;
+}
+
+h5 {
+  color: $color-subheading;
+  font-size: 1em;
+  letter-spacing: -0.002em;
+}
+
+h6 {
+  color: $color-subheading;
+  font-size: 0.85em;
+  text-transform: uppercase;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($color-primary, 15%);
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: lighten($color-primary, 15%);
+  }
+
+  &:focus {
+    outline: 2px solid rgba($color-primary, 0.4);
+    outline-offset: 2px;
+  }
+}
+
+p,
+ul,
+ol,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+pre,
+form,
+table {
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+dd,
+dd+dt,
+li+li {
+  margin-top: 4px;
+}
+
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin-top: 4px !important;
+}
+
+blockquote {
+  border: none;
+
+  &::before {
+    content: '\201C';
+  }
+
+  &::after {
+    content: '\201D';
+  }
+
+  &::before {
+    float: left;
+    margin-left: -1em;
+    text-align: right;
+    width: 1em;
+  }
+
+  &> :last-child {
+    display: inline-block;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead,
+tbody,
+tfoot {
+  border-bottom: 2px solid $color-border;
+}
+
+td,
+th {
+  border: none;
+  padding: 4px 8px;
+  text-align: left;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+caption {
+  font-size: 1.42em;
+  color: $color-subheading;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.008em;
+  margin-top: 1em;
+  margin-bottom: 8px;
+  text-align: left;
+}

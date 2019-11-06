@@ -1,0 +1,10 @@
+# For more information: https://help.github.com/ignore-files
+
+# dependencies
+/bower_components
+/node_modules
+
+# log
+*.log
+*-lock.json
+*.lock

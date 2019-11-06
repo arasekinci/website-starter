@@ -1,0 +1,32 @@
+@import '../abstracts/variables';
+
+.container {
+  padding-left: .5rem;
+  padding-right: .5rem;
+
+  &.no-padding {
+    padding: 0;
+  }
+}
+
+.row {
+  &.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+
+    &>div[class*="col-"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &.gutter {
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+
+    &>div[class*="col-"] {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+  }
+}
