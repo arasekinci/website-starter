@@ -7,7 +7,7 @@ Required explanations are made in the folder. Enjoy using.
 ## Installation
 Run the following code in the project to copy the GitHub repository;
 ```
-git clone https://github.com/arasekinciii/website-starter.git
+git clone https://github.com/arasekinci/website-starter.git
 ```
 *Remember to delete the hidden .git folder after downloading the files.*
 
